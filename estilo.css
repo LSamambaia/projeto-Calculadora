@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url("assets/images/fundo.gif");
+    background-size: cover;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fundo h1{
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px rgb(92, 222, 144);
+    position: absolute;
+    top: 5%;
+}
+
+.calculadora{
+    background-color: rgba(53, 235, 123, 0.664);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px #fff;
+}
+
+.calculadora h2{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+#resultado{
+    background-color: #fff;
+    height: 2.5rem;
+    text-align: right;
+    padding:  5px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+    width: 215px;
+    overflow-x: hidden;
+
+}
+
+button{
+    width: 3rem;
+    height: 3rem;
+    margin: 3px;
+    font-weight: 700;
+    box-shadow: 2px 2px 4px black;
+}
+
+button:hover{
+    background-color: rgb(76, 245, 169);
+}
+
+button:active{
+    font-size: 19px;
+    box-shadow: rgb(17, 180, 17);
+}
+
+td[rowspan="2"] button{
+    height: 105px;
+    
+
+}
+
+td[colspan="2"] button{
+    width: 105px;;
+    
+
+}
+
+@media(max-width: 500px) {
+
+    #tittle{
+    font-size: .000001rem;
+
+
+    }
+    .calculadora{
+        width: 70vw;
+        height: 82%;
+
+    }
+    .calculadora h2{
+        font-size: 2rem;
+    }
+        #resultado{
+           
+            height: 3rem;
+            padding:  .5rem;
+            font-size: 1.7rem;
+            width: 300px;
+            
+        }
+
+        table{
+            margin: 0 auto;
+
+        }
+
+        button{
+            width: 4rem;
+            height: 4rem;
+            font-size: 20px;
+            margin: 3px;
+            
+        }
+
+        td[rowspan="2"] button{
+            height: 136px;
+
+        }
+        
+    td[colspan ="2"] button{
+       width: 136px;
+    }
+
+
+   
+}
